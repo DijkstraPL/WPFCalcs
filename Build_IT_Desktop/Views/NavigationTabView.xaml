@@ -1,0 +1,28 @@
+﻿<UserControl x:Class="Build_IT_Desktop.Views.NavigationTabView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             xmlns:local="clr-namespace:Build_IT_Desktop.Views"
+             xmlns:constants="clr-namespace:Build_IT_Infrastructure.Constants;assembly=Build_IT_Infrastructure"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Border BorderBrush="{StaticResource BlackBrush}" 
+            BorderThickness="0,2"
+            Padding="5">
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Scripts" 
+                Width="70" 
+                Height="30"
+                Command="{Binding NavigateCommand}"
+                CommandParameter="{x:Static constants:ViewNames.SCRIPT_LIST_VIEW}"/>
+            <Button Content="Beam calculator" 
+                Width="120" 
+                Height="30"
+                Command="{Binding NavigateCommand}"
+                CommandParameter="{x:Static constants:ViewNames.BEAM_VIEW}"/>
+    </StackPanel>
+    </Border>
+</UserControl>

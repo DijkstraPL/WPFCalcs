@@ -1,0 +1,91 @@
+﻿<UserControl x:Class="Build_IT_BeamStaticaModule.Views.Preview.ContinuousLoads.UpDownTemperatureDifference"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Build_IT_BeamStaticaModule.Views.Preview.ContinuousLoads"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             x:Name="root">
+    <Canvas>
+        <Canvas.Style>
+            <Style TargetType="{x:Type Canvas}">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding ElementName=root, Path=IsPositive}" Value="False">
+                        <Setter Property="RenderTransform">
+                            <Setter.Value>
+                                <ScaleTransform ScaleY="-1"/>
+                            </Setter.Value>
+                        </Setter>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </Canvas.Style>
+        <Line X1="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4}"
+                X2="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4+20}"
+              Y1="0" Y2="-40"
+              StrokeThickness="1"
+              Stroke="{StaticResource OrangeBrush}"/>
+
+        <Line X1="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4+20}"
+                X2="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4+40}"
+              Y1="-40" Y2="0"
+              StrokeThickness="1"
+              Stroke="{StaticResource OrangeBrush}"/>
+
+        <Line X1="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4+10}"
+                X2="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4+30}"
+              Y1="-15" Y2="-15"
+              StrokeThickness="2"
+              Stroke="{StaticResource OrangeBrush}"/>
+
+        <Line X1="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4+20}"
+                X2="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4+20}"
+              Y1="-5" Y2="-25"
+              StrokeThickness="2"
+              Stroke="{StaticResource OrangeBrush}"/>
+
+        
+
+        <Line X1="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4*3}"
+                X2="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4*3-20}"
+              Y1="0" Y2="-40"
+              StrokeThickness="1"
+              Stroke="{StaticResource OrangeBrush}"/>
+
+        <Line X1="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4*3-20}"
+                X2="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4*3-40}"
+              Y1="-40" Y2="0"
+              StrokeThickness="1"
+              Stroke="{StaticResource OrangeBrush}"/>
+
+        <Line X1="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4*3-10}"
+                X2="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4*3-30}"
+              Y1="-15" Y2="-15"
+              StrokeThickness="2"
+              Stroke="{StaticResource OrangeBrush}"/>
+
+        <Line X1="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4*3-20}"
+                X2="{Binding ElementName=root, Path=Length, 
+            Converter={StaticResource MathConverter}, ConverterParameter=x*100/4*3-20}"
+              Y1="-5" Y2="-25"
+              StrokeThickness="2"
+              Stroke="{StaticResource OrangeBrush}"/>
+
+    </Canvas>
+</UserControl>

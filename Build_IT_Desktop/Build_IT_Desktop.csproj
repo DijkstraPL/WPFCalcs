@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Configurations>Debug;Release</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.4.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Prism.Unity" Version="8.1.97" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Build_IT_BeamStaticaModule\Build_IT_BeamStaticaModule.csproj" />
+    <ProjectReference Include="..\Build_IT_CalculationModule\Build_IT_CalculationModule.csproj" />
+    <ProjectReference Include="..\Build_IT_Infrastructure\Build_IT_Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

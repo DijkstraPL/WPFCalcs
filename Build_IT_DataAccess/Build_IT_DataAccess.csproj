@@ -1,0 +1,58 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Configurations>Debug;Release</Configurations>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ScriptInterpreter\Migrations\20190608124417_PhotosTablesAdded.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20190608124417_PhotosTablesAdded.Designer.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191018204800_GroupsForParameters.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191018204800_GroupsForParameters.Designer.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191018205358_GroupsForParameters.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191018205358_GroupsForParameters.Designer.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191018210506_GroupsForParameters.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191018210506_GroupsForParameters.Designer.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191018211314_GroupsForParameters.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191018211314_GroupsForParameters.Designer.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191018211427_GroupsForParameters.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191018211427_GroupsForParameters.Designer.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191019082134_GroupNameRemovedFromParameterScriptIdAddedToGroup.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191019082134_GroupNameRemovedFromParameterScriptIdAddedToGroup.Designer.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191019082859_GroupNameRemovedFromParameterScriptIdAddedToGroup.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191019082859_GroupNameRemovedFromParameterScriptIdAddedToGroup.Designer.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191029223013_TestDataAdded.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191029223013_TestDataAdded.Designer.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191111091608_Versions.cs" />
+    <Compile Remove="ScriptInterpreter\Migrations\20191111091608_Versions.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="6.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Build_IT_Data\Build_IT_Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DeadLoads\Entities\" />
+    <Folder Include="Sections\Repositories\" />
+  </ItemGroup>
+
+</Project>

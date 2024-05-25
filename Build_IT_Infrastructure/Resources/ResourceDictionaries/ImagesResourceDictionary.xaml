@@ -1,0 +1,10 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Build_IT_Infrastructure.Resources.ResourceDictionaries">
+
+    <BitmapImage x:Key="Exit" UriSource="/Build_IT_Infrastructure;component/Resources/Images/Exit.png"/>
+    <BitmapImage x:Key="Maximize" UriSource="/Build_IT_Infrastructure;component/Resources/Images/Maximize.png"/>
+    <BitmapImage x:Key="Minimize" UriSource="/Build_IT_Infrastructure;component/Resources/Images/Minimize.png"/>
+    <BitmapImage x:Key="Restore" UriSource="/Build_IT_Infrastructure;component/Resources/Images/Restore.png"/>
+    
+</ResourceDictionary>

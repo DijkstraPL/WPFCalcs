@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:conv="clr-namespace:Build_IT_Infrastructure.Resources.Converters"
+                    xmlns:local="clr-namespace:Build_IT_Infrastructure.Resources.ResourceDictionaries">
+
+    <conv:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    <conv:BoolToVisibilityReverseConverter x:Key="BoolToVisibilityReverseConverter"/>
+    <conv:AllFalseToVisibilityConverter x:Key="AllFalseToVisibilityConverter"/>
+    <conv:IsGreaterThanConverter x:Key="IsGreaterThanConverter"/>
+    <conv:MathConverter x:Key="MathConverter"/>
+    <conv:MultiplyByConverter x:Key="MultiplyByConverter"/>
+    <conv:NullToCollapsedVisibilityConverter x:Key="NullToCollapsedVisibilityConverter"/>
+</ResourceDictionary>

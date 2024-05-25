@@ -1,0 +1,20 @@
+﻿<prism:PrismApplication x:Class="Build_IT_Desktop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:local="clr-namespace:Build_IT_Desktop">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Build_IT_Infrastructure;component/Resources/ResourceDictionaries/Template.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Build_IT_Infrastructure;component/Resources/ResourceDictionaries/ColorsResourceDictionary.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Build_IT_Infrastructure;component/Resources/ResourceDictionaries/ConvertersResourceDictionary.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Build_IT_Infrastructure;component/Resources/ResourceDictionaries/ImagesResourceDictionary.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Build_IT_Infrastructure;component/Resources/ResourceDictionaries/Controls/TextStylesResourceDictionary.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Build_IT_Infrastructure;component/Resources/ResourceDictionaries/Controls/ButtonsStylesResourceDictionary.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Build_IT_Infrastructure;component/Resources/ResourceDictionaries/Controls/ScrollBarsStylesResourceDictionary.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Build_IT_Infrastructure;component/Resources/ResourceDictionaries/Controls/ComboBoxResourceDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries> 
+        </ResourceDictionary>
+    </Application.Resources>
+</prism:PrismApplication>

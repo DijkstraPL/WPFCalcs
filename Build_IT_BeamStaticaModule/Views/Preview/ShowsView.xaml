@@ -1,0 +1,100 @@
+﻿<UserControl x:Class="Build_IT_BeamStaticaModule.Views.Preview.ShowsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Build_IT_BeamStaticaModule.Views.Preview"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="SHOW"
+                               Grid.Column="1"
+                               Grid.Row="0"
+                               Style="{StaticResource MinorHeaderTextBlock}"/>
+        <CheckBox Content="Shear force"
+                              VerticalContentAlignment="Center"
+                               Grid.Column="1"
+                               Grid.Row="1"
+                          IsChecked="{Binding ShowShearForces}"/>
+        <CheckBox Content="Normal force"
+                              VerticalContentAlignment="Center"
+                               Grid.Column="1"
+                               Grid.Row="2"
+                          IsChecked="{Binding ShowNormalForces}"/>
+        <CheckBox Content="Bending moment"
+                              VerticalContentAlignment="Center"
+                               Grid.Column="1"
+                               Grid.Row="3"
+                          IsChecked="{Binding ShowBendingMoment}"/>
+        <CheckBox Content="Vertical deflections"
+                              VerticalContentAlignment="Center"
+                               Grid.Column="1"
+                               Grid.Row="4"
+                          IsChecked="{Binding ShowVerticalDeflections}"/>
+        <CheckBox Content="Horizontal deflections"
+                              VerticalContentAlignment="Center"
+                               Grid.Column="1"
+                               Grid.Row="5"
+                          IsChecked="{Binding ShowHorizontalDeflections}"/>
+        <CheckBox Content="Rotations"
+                              VerticalContentAlignment="Center"
+                               Grid.Column="1"
+                               Grid.Row="6"
+                          IsChecked="{Binding ShowRotations}"/>
+
+        <TextBlock Text="SCALE"
+                               Grid.Column="0"
+                               Grid.Row="0"
+                               Style="{StaticResource MinorHeaderTextBlock}"/>
+        <Slider Grid.Column="0"
+                               Grid.Row="1"
+                            Margin="0,0,2,0"
+                            Maximum="5"
+                            Minimum="0.05"
+                            Value="{Binding ShearScale}"/>
+        <Slider Grid.Column="0"
+                               Grid.Row="2"
+                            Margin="0,0,2,0"
+                            Maximum="5"
+                            Minimum="0.05"
+                            Value="{Binding NormalScale}"/>
+        <Slider Grid.Column="0"
+                               Grid.Row="3"
+                            Margin="0,0,2,0"
+                            Maximum="5"
+                            Minimum="0.05"
+                            Value="{Binding BendingMomentScale}"/>
+        <Slider Grid.Column="0"
+                               Grid.Row="4"
+                            Margin="0,0,2,0"
+                            Maximum="5"
+                            Minimum="0.05"
+                            Value="{Binding VerticalDeflectionScale}"/>
+        <Slider Grid.Column="0"
+                               Grid.Row="5"
+                            Margin="0,0,2,0"
+                            Maximum="5"
+                            Minimum="0.05"
+                            Value="{Binding HorizontalDeflectionScale}"/>
+        <Slider Grid.Column="0"
+                               Grid.Row="6"
+                            Margin="0,0,2,0"
+                            Maximum="5"
+                            Minimum="0.05"
+                            Value="{Binding RotationScale}"/>
+
+    </Grid>
+</UserControl>

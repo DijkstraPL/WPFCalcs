@@ -1,0 +1,81 @@
+﻿<UserControl x:Class="Build_IT_BeamStaticaModule.Views.Preview.Nodes.Sleeve"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Build_IT_BeamStaticaModule.Views.Preview.Nodes"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Canvas>
+        <Line X1="-20" X2="20"
+                  Y1="-10" Y2="-10"                 
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="3" />
+        <Line X1="-20" X2="20"
+                  Y1="10" Y2="10"                 
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="3" />
+
+        <Canvas>
+            <Line X1="-20" X2="-15"
+                  Y1="-20" Y2="-10"                 
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="1" />
+            <Line X1="-15" X2="-10"
+                  Y1="-20" Y2="-10"                
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="1" />
+            <Line X1="-10" X2="-5"
+                  Y1="-20" Y2="-10"               
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="1" />
+            <Line X1="-5" X2="0"
+                  Y1="-20" Y2="-10"              
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="1" />
+            <Line X1="0" X2="5"
+                  Y1="-20" Y2="-10"               
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="1" />
+            <Line X1="5" X2="10"
+                  Y1="-20" Y2="-10"               
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="1" />
+            <Line X1="10" X2="15"
+                  Y1="-20" Y2="-10"                
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="1" />
+        </Canvas>
+
+        <Canvas>
+            <Line X1="-20" X2="-15"
+                  Y1="20" Y2="10"                 
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="1" />
+            <Line X1="-15" X2="-10"
+                  Y1="20" Y2="10"                
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="1" />
+            <Line X1="-10" X2="-5"
+                  Y1="20" Y2="10"               
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="1" />
+            <Line X1="-5" X2="0"
+                  Y1="20" Y2="10"              
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="1" />
+            <Line X1="0" X2="5"
+                  Y1="20" Y2="10"               
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="1" />
+            <Line X1="5" X2="10"
+                  Y1="20" Y2="10"               
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="1" />
+            <Line X1="10" X2="15"
+                  Y1="20" Y2="10"                
+                  Stroke="{StaticResource WhiteBrush}"
+                  StrokeThickness="1" />
+        </Canvas>
+    </Canvas>
+</UserControl>

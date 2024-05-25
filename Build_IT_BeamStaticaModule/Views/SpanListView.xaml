@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="Build_IT_BeamStaticaModule.Views.SpanListView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Build_IT_BeamStaticaModule.Views"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+        <StackPanel>
+            <TextBlock Text="Spans"
+                       Style="{StaticResource MinorHeaderTextBlock}"
+                       Margin="5"/>
+            <Separator Margin="15,0,15,5"/>
+
+        <CheckBox Content="Include self weight"
+                  Margin="5"
+                      IsChecked="{Binding IncludeSelfWeight}"/>
+
+        <ListBox ItemsSource="{Binding SpanViewModels}"
+                     SelectedItem="{Binding SelectedSpanViewModel}"
+                     Margin="5,0">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="{Binding Name}"/>
+                            <Button Content="-"
+                                    Grid.Column="1"
+                                    Width="25"
+                                    Height="25"
+                                    Command="{Binding RemoveCommand}"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Button Content="+"
+                    Margin="0,5,0,0"
+                    Width="25"
+                    Height="25"
+                    Command="{Binding AddCommand}"/>
+        </StackPanel>
+</UserControl>
